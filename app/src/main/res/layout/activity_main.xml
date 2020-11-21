@@ -4,24 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello"
-        android:textColor="@color/colorPrimary"
-        android:background="@color/colorAccent"/>
+    tools:context=".MainActivity"
+    android:gravity="center">
 
 
     <TextView
+        android:id="@+id/hello_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Hello World from BEU!!!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp"
+        android:layout_marginRight="15dp"/>
 
+    <Button
+        android:id="@+id/hello_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:onClick="buttonClick"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="Change text"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp" />
 
 </LinearLayout>
